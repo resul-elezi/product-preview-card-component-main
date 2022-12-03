@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+  }
+ 
+html, body {
+    height: 100%;
+  }
+
+body {
+        background-color: hsl(30, 38%, 92%);
+        font-size: 14px;
+        display: grid;
+        place-content: center;
+        margin: 1rem;
+        line-height: 1.5;
+    }
+
+img, picture, svg {
+    display: block;
+    max-width: 100%;
+  }
+ 
+button {
+    font: inherit;
+  }
+
+p, h1 {
+    overflow-wrap: break-word;
+  }
+
+.product {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: grid;
+    max-width: 600px;
+}
+
+.product-body {
+    padding: 1.7rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.product-title, .product-description {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-title {
+    letter-spacing: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.product-name {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+    line-height: 1;
+}
+
+.product-description {
+    font-size: 0.86rem;
+}
+
+.price-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sales-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+.normal-price {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.85rem;
+   
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    text-decoration: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: hsl(158, 36%, 19%);
+}
+
+@media screen and (min-width: 600px) {
+    .product {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-body {
+        padding: 2rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        margin-top: 0.6rem;
+    }
+
+    .price-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+.attribution { 
+    display:block;
+    font-size: 11px; text-align: center; 
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
